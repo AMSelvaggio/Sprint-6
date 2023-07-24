@@ -1,0 +1,23 @@
+
+<div class="containerMenu"    *ngIf="confirmPass">
+<h1>Aventura espacial</h1>
+<p>Embarca't en una aventura espacial amb final inesperat! 
+  <br>  Només has de clickar en el boto de sota per començar l'avetura.</p>
+
+
+
+
+<div class="contanerButton">
+<button (click)="outMainPage()">Comença la aventura!</button>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<app-escena  *ngIf="!confirmPass" [frases]="frases"></app-escena>

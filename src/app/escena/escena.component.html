@@ -1,0 +1,6 @@
+<button (click)="anterior()">Anterior</button>
+<button (click)="seguent()">Següent</button>
+
+<ul>
+  <li *ngFor="let frase of frases; let i = index" [class.destacado]="i === indexFrase">{{ frase.item }}</li>
+</ul>
